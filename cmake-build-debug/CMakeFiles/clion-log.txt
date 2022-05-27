@@ -1,0 +1,9 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.2.3/bin/ninja/win/ninja.exe" -G Ninja C:\Users\user\CLionProjects\T_5_newcheck
+CMake Error at CMakeLists.txt:6 (add_subdirectory):
+  add_subdirectory given source
+  "C:/Users/user/CLionProjects/T_5_newcheck/googletest" which is not an
+  existing directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/user/CLionProjects/T_5_newcheck/cmake-build-debug/CMakeFiles/CMakeOutput.log".

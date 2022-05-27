@@ -1,0 +1,44 @@
+name: test
+
+on:
+  push:
+    branches: [ master ]
+
+
+
+
+jobs:
+
+  testing:
+    runs-on: ubuntu-latest
+
+    steps:
+  
+      - uses: actions/checkout@v3
+      
+      - name: Install
+        run: |
+          sudo apt install g++ cmake lcov
+          git submodule add https://github.com/google/googletest
+
+      - name: Build-and-run-tests
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build .
+          
+      - name: run-test
+        run: ./build/lib_test
+        
+      - name: add-info
+        run: |
+          mkdir coverage
+          cd coverage
+          lcov -t "test" -o lcov.info -c -d ../build/bank/CMakeFiles/banking.dir 
+      
+      - name: Coveralls GitHub Action
+        uses: coverallsapp/github-action@1.1.3
+        with:
+          github-token: ${{ secrets.github_token }}
+
