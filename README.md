@@ -2,8 +2,7 @@
 
 cmake для библиотеки banking.
 
-![image](https://user-images.githubusercontent.com/91694520/170699588-dc6e7efd-c4fa-4892-aece-62f7504876be.png)
-
+![image](https://user-images.githubusercontent.com/91694520/170736501-71e12003-e311-4e78-bdff-eeefb175364e.png)
 
 cmake для всех файлов
 
