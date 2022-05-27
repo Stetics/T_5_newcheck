@@ -22,3 +22,4 @@ cmake для всех файлов
 
 Coveralls
 
+![image](https://user-images.githubusercontent.com/91694520/170700562-e079ca6b-1171-4c69-8713-f5888f68ba36.png)
